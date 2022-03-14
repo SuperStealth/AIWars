@@ -1,14 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public interface IWarriorStats
+namespace AIWars
 {
-    
-    public float Health { get; }
-    public float Speed { get; }
-    public float Radius { get; }
-    public float Attack { get; }
+    public interface IWarriorStats
+    {
 
-    public void GetDamage(float damage);
+        public float Health { get; }
+        public float Speed { get; }
+        public float Radius { get; }
+        public float Attack { get; }
+
+        public void GetDamage(float damage);
+    }
 }
