@@ -1,15 +1,23 @@
 public class WarriorStats : IWarriorStats
 {
-    public WarriorStats()
+    public WarriorStats(float Health, float Speed, float Radius, float Attack)
     {
-
+        this.Health = Health;
+        this.Speed = Speed;
+        this.Radius = Radius;
+        this.Attack = Attack;
     }
 
-    public float Health => throw new System.NotImplementedException();
+    public float Health { get; private set; }
 
-    public float Speed => throw new System.NotImplementedException();
+    public float Speed { get; private set; }
 
-    public float Radius => throw new System.NotImplementedException();
+    public float Radius { get; private set; }
 
-    public float Attack => throw new System.NotImplementedException();
+    public float Attack { get; private set; }
+
+    public void GetDamage(float damage)
+    {
+        Health -= damage;
+    }
 }

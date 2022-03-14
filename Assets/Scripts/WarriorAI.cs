@@ -2,11 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WarriorAI : MonoBehaviour
+public class WarriorAI : MonoBehaviour, IWarriorAI
 {
-    
-    // Update is called once per frame
-    void Update()
+    public void StartFight()
     {
         
     }
